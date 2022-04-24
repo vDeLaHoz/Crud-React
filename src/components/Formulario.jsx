@@ -409,11 +409,11 @@ const Formulario = () => {
                                             <div className="col-4"><b>Edad: </b> {item.age}</div>
                                         </div>
                                     </span><br/>
-                                    <button className='btn btn-danger btn-sm float-start mx-2' onClick={() => eliminar(item.id)}>
-                                        Eliminar
-                                    </button>
                                     <button className='btn btn-success btn-sm float-start' onClick={() => editar(item)}>
                                         Editar
+                                    </button>
+                                    <button className='btn btn-danger btn-sm float-start mx-2' onClick={() => eliminar(item.id)}>
+                                        Eliminar
                                     </button>
                                 </li>
                             ))
