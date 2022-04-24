@@ -368,7 +368,7 @@ const Formulario = () => {
                                         (
                                             <>
                                                 <button
-                                                    className='btn btn-warning btn-block'
+                                                    className='btn btn-success btn-block'
                                                     type='submit'
                                                 >Editar</button>
                                                 <button
@@ -389,24 +389,30 @@ const Formulario = () => {
                         </div>
                     </div>
 
-                    <h4 className='text-center'>PERSONAS</h4>
-                    <ul className='list-group'>
+                    <hr/><h4 className='text-center'>PERSONAS</h4>
+                    <hr/><ul className='list-group'>
                         {
                             lista.map(item => (
                                 <li className='list-group-item' key={item.id}>
                                     <span className='lead'>
-                                        <b>Nombres: </b>{item.name}
-                                        <br /><b>Apellidos: </b>{item.lastName}
-                                        <br /><b>Celular: </b> {item.cel}
-                                        <br /><b>Direccion: </b> {item.direction}
-                                        <br /><b>Correo: </b> {item.email}
-                                        <br /><b>Pais: </b> {item.country}
-                                        <br /><b>Edad: </b> {item.age}
-                                    </span>
-                                    <button className='btn btn-danger btn-sm float-end mx-2' onClick={() => eliminar(item.id)}>
+                                        <div className="row">
+                                            <div className="col-4"><b>Nombres: </b>{item.name}</div>
+                                            <div className="col-4"><b>Apellidos: </b>{item.lastName}</div>
+                                            <div className="col-4"><b>Celular: </b> {item.cel}</div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-4"><b>Direccion: </b> {item.direction}</div>
+                                            <div className="col-4"><b>Correo: </b> {item.email}</div>
+                                            <div className="col-4"><b>Pais: </b> {item.country}</div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-4"><b>Edad: </b> {item.age}</div>
+                                        </div>
+                                    </span><br/>
+                                    <button className='btn btn-danger btn-sm float-start mx-2' onClick={() => eliminar(item.id)}>
                                         Eliminar
                                     </button>
-                                    <button className='btn btn-warning btn-sm float-end' onClick={() => editar(item)}>
+                                    <button className='btn btn-success btn-sm float-start' onClick={() => editar(item)}>
                                         Editar
                                     </button>
                                 </li>
