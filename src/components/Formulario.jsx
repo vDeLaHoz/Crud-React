@@ -78,7 +78,7 @@ const Formulario = () => {
             return
         }
         
-        if (celular.length != 10) {
+        if (celular.length !== 10) {
             setCantN('El numero de celular debe tener 10 digitos')
         }
 
@@ -259,9 +259,9 @@ const Formulario = () => {
         <div className='container mt-5'>
             <div className='row'>
                     <div class="card-center">
-                        <h3 className="card-header bg-primary text-center text-white">{edicion ? 'Editar' : 'Agregar'}</h3>
+                        <h3 className="card-header bg-primary text-center text-white">{edicion ? 'Editar Información' : 'Agregar Información'}</h3>
                         <div class="card-body">
-                            <form onSubmit={edicion ? editar : guardar}>
+                            <form onSubmit={edicion ? editarDatos : guardar}>
                                 <div className="row">
                                     <div className="col-4">
                                         <label>Nombres:</label>
