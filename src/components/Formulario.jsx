@@ -80,15 +80,18 @@ const Formulario = () => {
         
         if (celular.length !== 10) {
             setCantN('El numero de celular debe tener 10 digitos')
+            return
         }
 
         if (celular < 0) {
             setNumN('No se aceptan numeros negativos')
+            return
         }
 
 
         if (edad < 0 || edad > 110) {
             setValEdad('Edad invalida')
+            return
         }
 
         try {
@@ -121,6 +124,9 @@ const Formulario = () => {
             setCorreo('')
             setPais('')
             setEdad('')
+            setCantN('')
+            setNumN('')
+            setValEdad('')
             setError(null)
         } catch (error) {
             console.log(error)
@@ -180,15 +186,18 @@ const Formulario = () => {
 
         if (celular.length != 10) {
             setCantN('El numero de celular debe tener 10 digitos')
+            return
         }
 
         if (celular < 0) {
             setNumN('No se aceptan numeros negativos')
+            return
         }
 
 
         if (edad < 0 || edad > 110) {
             setValEdad('Edad invalida')
+            return
         }
 
         try {
@@ -219,6 +228,9 @@ const Formulario = () => {
             setCorreo('')
             setPais('')
             setEdad('')
+            setCantN('')
+            setNumN('')
+            setValEdad('')
             setEdicion(false)
             setError(null)
 
@@ -252,6 +264,9 @@ const Formulario = () => {
         setPais('')
         setEdad('')
         setDireccion('')
+        setCantN('')
+        setNumN('')
+        setValEdad('')
         setError(null)
     }
 
