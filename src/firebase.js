@@ -6,12 +6,12 @@ import 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDVkXrUGwbf81yJeb14O9ps89VU5-pA9RI",
-  authDomain: "crud-react-67bf2.firebaseapp.com",
-  projectId: "crud-react-67bf2",
-  storageBucket: "crud-react-67bf2.appspot.com",
-  messagingSenderId: "112794816909",
-  appId: "1:112794816909:web:f0131c20f750835512edc4"
+  apiKey: "AIzaSyDgYH2oMUERyi97iQ3fVs86JE7fF4mjPXM",
+  authDomain: "crud-raect.firebaseapp.com",
+  projectId: "crud-raect",
+  storageBucket: "crud-raect.appspot.com",
+  messagingSenderId: "307455154369",
+  appId: "1:307455154369:web:0d135b688af1eb8ec99c40"
 };
 
 // Initialize Firebase
